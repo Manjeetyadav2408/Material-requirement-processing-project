@@ -28,5 +28,6 @@ CREATE TABLE Processing_Log (
     MaterialID INT,
     StageName VARCHAR(50) NOT NULL,
     Status VARCHAR(20) DEFAULT 'Pending',
+    ProcessDate DATE,
     FOREIGN KEY (MaterialID) REFERENCES Materials(MaterialID) ON DELETE CASCADE
 );
